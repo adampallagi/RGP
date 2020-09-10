@@ -1,0 +1,2 @@
+# RGP
+Szoftverfejlesztesi projekt repo
