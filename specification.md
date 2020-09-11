@@ -15,12 +15,12 @@ __Olyan rendszereket használnak, mint például:__
 * Pop! OS    
 
 De természetesen akadnak még Windows felhasználók is.   
-Ezeknél a rendszereknél azt tapasztaltuk, hogy a beépített számológépek nagyon eltérőek egymástól, így egyelőre még Windows-os számológépet ajánljuk használatra és használjuk oktatásra.
+Ezeknél a rendszereknél azt tapasztaltuk, hogy a beépített számológépek nagyon eltérőek egymástól, így egyelőre még Windows-os számológépet ajánljuk használatra és használjuk oktatásra.    
 
 ### Vágyálomrendszer leírása <Tomi>
 
-A digitalizáció nevében szeretnénk matematikai gyakorló szoftvert rendelni,
-amivel a diákok tudják gyakorolni és fejleszteni a fejben vagy írásban történő műveletvégzéseket...
+A csoportunk nagyon fontosnak tartja, hogy tanárokként lépést tartsunk a technológiával, hogy a lehető legkorszerűbb eszközöket használjuk az oktatásban, illetve védeni tudjuk diákjainkat az új technológiák jelentette veszélyektől.    
+Dedikáltságunkat semmi sem jelzi jobban, mint például **a 80 éves Stefi** bácsi esete, aki a beszterce-lakótelepi általános iskolások testnevelő tanára, aki nemrégiben feltelepítette számítógépére az **Arch Linux** disztribúciót egy úgy nevezett ``dwm`` ablakkezelő rendszerrel, hogy naprakész maradjon a fiatalsággal, így jobban tudva motiválni őket a sportolásra.
 
 ### Jelenlegi üzleti folyamatok <Ádám>
 
