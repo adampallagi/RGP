@@ -1,33 +1,44 @@
-### Jelenlegi helyzet leírása
+Cross-Platform Számológép
 
-* Hogy állunk most?
-* Mi van meg eddig?
-* Mi a projekt
-* Mi a neve? - Minesweeper
-* Mi a meghatározása - egyszemélyes játék
+### Jelenlegi helyzet leírása <Tomi>
+Mi egy általános iskolákat összefogó tanári szervezet vagyunk, célunk, hogy a város minden általános iskolása ugyanabban a tanítási minőségben részesüljön, mint bármelyik társa.       
+Az iskoláink tanulói többsége **Microsoft Windows** felhasználó, így
+alapértelmezetten **a gyári számológépet használják** különböző számításai igényeik kielégítésére.      
+Észrevettük azonban egy egyre nagyobb mértékeket öltő tendenciát, a nebulók
+elhagyják _szeretett_ Microsoft Windows operációs rendszerünket egy újabb, még általunk is alig ismert, általuk __GNU+Linux__-nak nevezett operációs rendszerekre.
+__Olyan rendszereket használnak, mint például:__   
+* Arch Linux
+* Gentoo
+* Manjaro
+* Fedora
+* Hannah Montana Linux
+* Pop! OS    
 
-### Vágyálomrendszer leírása 
+De természetesen akadnak még Windows felhasználók is.   
+Ezeknél a rendszereknél azt tapasztaltuk, hogy a beépített számológépek nagyon eltérőek egymástól, így egyelőre még Windows-os számológépet ajánljuk használatra és használjuk oktatásra.
 
-* Hogyan nézzen ki?
-* Milyen legyen a megjelenése?
-* Mit tudjon a program?
-* Hogyan szeretnénk hogy mülködjön?
-* Mit tud vele csinálni a felhasználó?
+### Vágyálomrendszer leírása <Tomi>
 
-### Jelenlegi üzleti folyamatok
+A digitalizáció nevében szeretnénk matematikai gyakorló szoftvert rendelni,
+amivel a diákok tudják gyakorolni és fejleszteni a fejben vagy írásban történő műveletvégzéseket...
 
-* Ha kell, akkor milyen legyen, mit használunk, milyen legyen?
+### Jelenlegi üzleti folyamatok <Ádám>
+
+Az iskolánk így és eképp ad lehetőséget a felkészülésre...
 
 
-### Igényelt üzleti folyamatok
+### Igényelt üzleti folyamatok <Ádám>
 
-* Ugyancsak abban az esetben ha szükséges
+Időméréses tesztek
+Szöveges tesztek
+Pontrendszer, rangsor
 
-### A rendszerre vonatkozó szabályok
+
+### A rendszerre vonatkozó szabályok <Dóra>
 
 * Követelmények, eszközök amiket használunk (Java 11+, Maven --build tool, Gluon Scene Builder)
 
-### Követelménylista 
+### Követelménylista <Dóra>
 
 * Milyen eszközöket használunk?
 * Java 11+
@@ -35,7 +46,7 @@
 * Gluon Scene Builder - felhasználói felület
 
 
-### Fogalomszótár
+### Fogalomszótár <Mindenki>
 
 * A játékban felmerülő fogalmak
 * Mi az a játékos?
