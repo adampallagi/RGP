@@ -24,31 +24,28 @@ Dedikáltságunkat semmi sem jelzi jobban, mint például **a 80 éves Stefi** b
 
 ### Jelenlegi üzleti folyamatok <Ádám>
 
-Az iskolánk így és eképp ad lehetőséget a felkészülésre...
+-
 
 
 ### Igényelt üzleti folyamatok <Ádám>
 
-Időméréses tesztek
-Szöveges tesztek
-Pontrendszer, rangsor
+-
 
 
 ### A rendszerre vonatkozó szabályok <Dóra>
 
-* Követelmények, eszközök amiket használunk (Java 11+, Maven --build tool, Gluon Scene Builder)
+-
 
 ### Követelménylista <Dóra>
 
-* Milyen eszközöket használunk?
-* Java 11+
-* Maven - build tool
-* Gluon Scene Builder - felhasználói felület
+-
 
 
 ### Fogalomszótár <Mindenki>
 
-* A játékban felmerülő fogalmak
-* Mi az a játékos?
-* Mi az a bomba/akna?
-* Mi az a mező?
+Fogalmak:
+* **Linux**: Avagy Linux-rendszermag, rendszermag.  
+* **Rendszermag**: Az operációs rendszer erőforrásait kezelő program.
+* **Linux disztribúció**: A Linux-disztribúciók a Linux-kernelre épülő terjesztések. Linux kernel mellett több-kevesebb szabad szoftvert és kereskedelmi szoftvert tartalmazhatnak.  
+* **GNU/Linux, GNU+Linux, ...**: Linux nem egy operációs rendszer magában, inkább egy újabb szabad komponense a teljesen fukcionáló GNU rendszernek, amelyeket a GNU corelibs, shell eszközök és létfontosságú rendszerkomponensek műküödtetnek egy teljes OS-ként, POSIX-meghatározás szerint.
+* To be continued..
