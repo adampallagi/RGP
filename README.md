@@ -10,7 +10,7 @@ Mi egy általános iskolákat összefogó tanári szervezet vagyunk, célunk, ho
 Az iskoláink tanulói többsége **Microsoft Windows** felhasználó, így
 alapértelmezetten **a gyári számológépet használják** különböző számításai igényeik kielégítésére.      
 Észrevettük azonban egy egyre nagyobb mértékeket öltő tendenciát, a nebulók
-elhagyják _szeretett_ Microsoft Windows operációs rendszerünket egy újabb, még általunk is alig ismert, általuk __GNU+Linux__-nak nevezett operációs rendszerekre.
+elhagyják _szeretett_ Microsoft Windows operációs rendszerünket egy újabb, még általunk is alig ismert, általuk __GNU+Linux__-nak nevezett operációs rendszerekre.       
 __Olyan rendszereket használnak, mint például:__   
 * Arch Linux
 * Gentoo
