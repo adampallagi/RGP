@@ -14,21 +14,18 @@
 * Hogyan szeretnénk hogy mülködjön?
 * Mit tud vele csinálni a felhasználó?
 
-
-### A rendszerre vonatkozó pályázat, törvények, rendeletek, szabványok és ajánlások felsorolása
-
-* Követelmények, eszközök amiket használunk (Java 11+, Maven --build tool, Gluon Scene Builder)
-
-
-### Jelenlegi üzleti folyamatok modellje
+### Jelenlegi üzleti folyamatok
 
 * Ha kell, akkor milyen legyen, mit használunk, milyen legyen?
 
 
-### Igényelt üzleti folyamatok modellje
+### Igényelt üzleti folyamatok
 
 * Ugyancsak abban az esetben ha szükséges
 
+### A rendszerre vonatkozó szabályok
+
+* Követelmények, eszközök amiket használunk (Java 11+, Maven --build tool, Gluon Scene Builder)
 
 ### Követelménylista 
 
@@ -36,11 +33,6 @@
 * Java 11+
 * Maven - build tool
 * Gluon Scene Builder - felhasználói felület
-
-
-### Irányított és szabad szöveges riportok szövege
-
-* Rész ami megfejtésre vár...
 
 
 ### Fogalomszótár
