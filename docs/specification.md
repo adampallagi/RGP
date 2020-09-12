@@ -27,12 +27,12 @@ Dedikáltságunkat semmi sem jelzi jobban, mint például **a 80 éves Stefi** b
 -
 
 
-### Igényelt üzleti folyamatok <Ádám>
+### Igényelt üzleti folyamatok <Dóra>
 
 -
 
 
-### A rendszerre vonatkozó szabályok <Dóra>
+### A rendszerre vonatkozó szabályok <Ádám>
 
 -
 
