@@ -60,7 +60,14 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
 
 ### Követelménylista 
 
--
+1. Könnyen üzemeltethetőség
+2. Reszponzív GUI
+3. Java
+4. Cross-Platform
+5. Előzmény mód
+6. Felvétel mód
+7. Matematikai alapműveletek
+8. Matematikai haladó műveletek
 
 ---
 
