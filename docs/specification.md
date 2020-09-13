@@ -48,6 +48,9 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
 3. Támogasson History (Előzmény) módot
     - Az előzmény módban az egyes műveletek esetében látni szeretnénk a műveletet, a számo(ka)t melye(ke)n a művelet elvégezve lett, illetve a művelet eredményét
     - Átlátható legyen, az egyes műveletek ne follyanak össze 
+4. Támogasson Record (Felvétel) módot
+    - Kattintás a record gombra -> a felvétel megkezdődik -> ezt követően rogzülnek a kattintások (sor adatszerkezet) -> a record gombra újra rákattintva végetér és mentődik a felvétel
+    - A mentés csak addig létezik amíg a program fut, a program újbóli futtatásával a mentések már nem lesznek elérhetőek
 
 
 ---
