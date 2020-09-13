@@ -38,8 +38,8 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
 	- Alapvető támogatott műveleteket használja
 2. GNU/Linux számológép használata
 	- Diák betölti a Linux kernelt => shell => userspace
-	- AKtuálisna elérhető számológépet használja
-3. A diaák egy Online számológépet használ
+	- AKtuálisan elérhető számológépet használja
+3. A diák egy Online számológépet használ
 	- Nem egységes számológép
 	- különböző bonyolultabb matematikai műveletek használata
 
@@ -55,7 +55,12 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
 
 ### A rendszerre vonatkozó szabályok 
 
--
+-Az alkalmazás legyen reszponzív
+-A nyelv Java legyen, az eszközök szabadon választhatók
+-A program ne rögzítse a user inputot amíg nincs Record módban
+-GUI legyen JavaFX alapokon
+-Történelmi mód nem igényel adatbázist, nem kesz üzemeltetünk adatbázist
+
 
 ---
 
@@ -73,7 +78,7 @@ Fogalmak:
 * **Rendszermag**: Az operációs rendszer erőforrásait kezelő program.
 * **Linux disztribúció**: A Linux-disztribúciók a Linux-kernelre épülő terjesztések. Linux kernel mellett több-kevesebb szabad szoftvert és kereskedelmi szoftvert tartalmazhatnak.  
 * **GNU/Linux, GNU+Linux, ...**: Linux nem egy operációs rendszer magában, inkább egy újabb szabad komponense a teljesen fukcionáló GNU rendszernek, amelyeket a GNU corelibs, shell eszközök és létfontosságú rendszerkomponensek műküödtetnek egy teljes OS-ként, POSIX-meghatározás szerint.
-* To be continued..
+* **GUI (Graphic User Interface)**: A felület amit a felhasználó lát és ahol a program funkcióit használja
 
 ---
 ---
