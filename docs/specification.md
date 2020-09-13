@@ -34,14 +34,14 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
 ### Jelenlegi üzleti folyamatok 
 
 1. Windows számológép használata
-	-- Diák betölti a Windows NT Kernelt => shell => userspace => megnyitja a Számológépet
-	-- Alapvető támogatott műveleteket használja
+	- Diák betölti a Windows NT Kernelt => shell => userspace => megnyitja a Számológépet
+	- Alapvető támogatott műveleteket használja
 2. GNU/Linux számológép használata
-	-- Diák betölti a Linux kernelt => shell => userspace
-	-- AKtuálisna elérhető számológépet használja
+	- Diák betölti a Linux kernelt => shell => userspace
+	- AKtuálisna elérhető számológépet használja
 3. A diaák egy Online számológépet használ
-	-- Nem egységes számológép
-	-- különböző bonyolultabb matematikai műveletek használata
+	- Nem egységes számológép
+	- különböző bonyolultabb matematikai műveletek használata
 
 
 ---
