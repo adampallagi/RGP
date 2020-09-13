@@ -40,7 +40,15 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
 
 ### Igényelt üzleti folyamatok 
 
--
+1. Támogasson alap matematikai műveleteket
+    - Az alapműveletek a numerikus billentyűzet közvetlen közelében legyenek
+2. Támogasson haladó matematikai koncepciókat 
+    - Konverziók, trigonometriai függvények, hres konstansok ...
+    - A funkciók típus szerint csoportosítva legyenek, a műveletek könnyebb megtalálása érdekében
+3. Támogasson History (Előzmény) módot
+    - Az előzmény módban az egyes műveletek esetében látni szeretnénk a műveletet, a számo(ka)t melye(ke)n a művelet elvégezve lett, illetve a művelet eredményét
+    - Átlátható legyen, az egyes műveletek ne follyanak össze 
+
 
 ---
 
