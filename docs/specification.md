@@ -33,7 +33,16 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
 
 ### Jelenlegi üzleti folyamatok 
 
--
+1. Windows számológép használata
+	- Diák betölti a Windows NT Kernelt => shell => userspace => megnyitja a Számológépet
+	- Alapvető támogatott műveleteket használja
+2. GNU/Linux számológép használata
+	- Diák betölti a Linux kernelt => shell => userspace
+	- AKtuálisan elérhető számológépet használja
+3. A diák egy Online számológépet használ
+	- Nem egységes számológép
+	- különböző bonyolultabb matematikai műveletek használata
+
 
 ---
 
@@ -57,7 +66,12 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
 
 ### A rendszerre vonatkozó szabályok 
 
--
+* Az alkalmazás legyen reszponzív
+* A nyelv Java legyen, az eszközök szabadon választhatók
+* A program ne rögzítse a user inputot amíg nincs Record módban
+* GUI legyen JavaFX alapokon
+* Történelmi mód nem igényel adatbázist, nem kesz üzemeltetünk adatbázist
+
 
 ---
 
@@ -72,6 +86,7 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
 7. Matematikai alapműveletek
 8. Matematikai haladó műveletek
 
+
 ---
 
 
@@ -82,11 +97,11 @@ Fogalmak:
 * **Rendszermag**: Az operációs rendszer erőforrásait kezelő program.
 * **Linux disztribúció**: A Linux-disztribúciók a Linux-kernelre épülő terjesztések. Linux kernel mellett több-kevesebb szabad szoftvert és kereskedelmi szoftvert tartalmazhatnak.  
 * **GNU/Linux, GNU+Linux, ...**: Linux nem egy operációs rendszer magában, inkább egy újabb szabad komponense a teljesen fukcionáló GNU rendszernek, amelyeket a GNU corelibs, shell eszközök és létfontosságú rendszerkomponensek műküödtetnek egy teljes OS-ként, POSIX-meghatározás szerint.
+* **GUI (Graphic User Interface)**: A felület amit a felhasználó lát és ahol a program funkcióit használja
 * **Előzmény (History) mód**: A korábban elvégzett műveletek listája.
 * **Felvétel (Record) mód**: Műveletek egy sorának kimentése későbbi felhasználásra.
 * **Cross-Platform**: Másnéven platformfüggetlenség, mely olyan operációs rendszerekre, programozási nyelvekre vagy számítógépes programokra, szoftverekre és implementációikra vonatkozik, amelyek több számítógépes platformon képesek mülködni. 
 * **Platform**: Olyan hardver- és/vagy szoftverkörnyezet, mely meghatározza, hogy az adott számítógépen milyen más programok használhatók.
-* To be continued..
 
 ---
 ---
