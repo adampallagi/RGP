@@ -40,7 +40,18 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
 
 ### Igényelt üzleti folyamatok 
 
--
+1. Támogasson alap matematikai műveleteket
+    - Az alapműveletek a numerikus billentyűzet közvetlen közelében legyenek
+2. Támogasson haladó matematikai koncepciókat 
+    - Konverziók, trigonometriai függvények, hres konstansok ...
+    - A funkciók típus szerint csoportosítva legyenek, a műveletek könnyebb megtalálása érdekében
+3. Támogasson History (Előzmény) módot
+    - Az előzmény módban az egyes műveletek esetében látni szeretnénk a műveletet, a számo(ka)t melye(ke)n a művelet elvégezve lett, illetve a művelet eredményét
+    - Átlátható legyen, az egyes műveletek ne follyanak össze 
+4. Támogasson Record (Felvétel) módot
+    - Kattintás a record gombra -> a felvétel megkezdődik -> ezt követően rogzülnek a kattintások (sor adatszerkezet) -> a record gombra újra rákattintva végetér és mentődik a felvétel
+    - A mentés csak addig létezik amíg a program fut, a program újbóli futtatásával a mentések már nem lesznek elérhetőek
+
 
 ---
 
@@ -52,7 +63,14 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
 
 ### Követelménylista 
 
--
+1. Könnyen üzemeltethetőség
+2. Reszponzív GUI
+3. Java
+4. Cross-Platform
+5. Előzmény mód
+6. Felvétel mód
+7. Matematikai alapműveletek
+8. Matematikai haladó műveletek
 
 ---
 
@@ -64,6 +82,10 @@ Fogalmak:
 * **Rendszermag**: Az operációs rendszer erőforrásait kezelő program.
 * **Linux disztribúció**: A Linux-disztribúciók a Linux-kernelre épülő terjesztések. Linux kernel mellett több-kevesebb szabad szoftvert és kereskedelmi szoftvert tartalmazhatnak.  
 * **GNU/Linux, GNU+Linux, ...**: Linux nem egy operációs rendszer magában, inkább egy újabb szabad komponense a teljesen fukcionáló GNU rendszernek, amelyeket a GNU corelibs, shell eszközök és létfontosságú rendszerkomponensek műküödtetnek egy teljes OS-ként, POSIX-meghatározás szerint.
+* **Előzmény (History) mód**: A korábban elvégzett műveletek listája.
+* **Felvétel (Record) mód**: Műveletek egy sorának kimentése későbbi felhasználásra.
+* **Cross-Platform**: Másnéven platformfüggetlenség, mely olyan operációs rendszerekre, programozási nyelvekre vagy számítógépes programokra, szoftverekre és implementációikra vonatkozik, amelyek több számítógépes platformon képesek mülködni. 
+* **Platform**: Olyan hardver- és/vagy szoftverkörnyezet, mely meghatározza, hogy az adott számítógépen milyen más programok használhatók.
 * To be continued..
 
 ---
