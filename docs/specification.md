@@ -55,11 +55,11 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
 
 ### A rendszerre vonatkozó szabályok 
 
--Az alkalmazás legyen reszponzív
--A nyelv Java legyen, az eszközök szabadon választhatók
--A program ne rögzítse a user inputot amíg nincs Record módban
--GUI legyen JavaFX alapokon
--Történelmi mód nem igényel adatbázist, nem kesz üzemeltetünk adatbázist
+* Az alkalmazás legyen reszponzív
+* A nyelv Java legyen, az eszközök szabadon választhatók
+* A program ne rögzítse a user inputot amíg nincs Record módban
+* GUI legyen JavaFX alapokon
+* Történelmi mód nem igényel adatbázist, nem kesz üzemeltetünk adatbázist
 
 
 ---
