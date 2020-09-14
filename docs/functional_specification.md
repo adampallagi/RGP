@@ -39,3 +39,13 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
 ### Forgatókönyvek.
 ### Funkció –követelmény megfeleltetés.
 ### Fogalomszótár
+Fogalmak:
+* **Linux**: Avagy Linux-rendszermag, rendszermag.  
+* **Rendszermag**: Az operációs rendszer erőforrásait kezelő program.
+* **Linux disztribúció**: A Linux-disztribúciók a Linux-kernelre épülő terjesztések. Linux kernel mellett több-kevesebb szabad szoftvert és kereskedelmi szoftvert tartalmazhatnak.  
+* **GNU/Linux, GNU+Linux, ...**: Linux nem egy operációs rendszer magában, inkább egy újabb szabad komponense a teljesen fukcionáló GNU rendszernek, amelyeket a GNU corelibs, shell eszközök és létfontosságú rendszerkomponensek műküödtetnek egy teljes OS-ként, POSIX-meghatározás szerint.
+* **GUI (Graphic User Interface)**: A felület amit a felhasználó lát és ahol a program funkcióit használja
+* **Előzmény (History) mód**: A korábban elvégzett műveletek listája.
+* **Felvétel (Record) mód**: Műveletek egy sorának kimentése későbbi felhasználásra.
+* **Cross-Platform**: Másnéven platformfüggetlenség, mely olyan operációs rendszerekre, programozási nyelvekre vagy számítógépes programokra, szoftverekre és implementációikra vonatkozik, amelyek több számítógépes platformon képesek mülködni. 
+* **Platform**: Olyan hardver- és/vagy szoftverkörnyezet, mely meghatározza, hogy az adott számítógépen milyen más programok használhatók.
