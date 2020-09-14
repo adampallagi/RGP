@@ -34,6 +34,49 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
 ### Igényelt üzleti folyamatok modellje.
 ### Követelménylista.
 ### Használati esetek[Use cases].
+1. __Title:__  A tanuló számítást végez és eredményt kap
+   __Main Success Scenario:__ 
+    1. A tanuló futtatja a programot (JVM elindul előtte :).
+    2. A program betölti a JavaFX keretrendszert.
+    3. A program betölti classpath útján a GUI-t leíró FXML fájt.
+    4. A user beírja a kiszámítandó kifejezést.
+    5. A számológép részeredményekkel szolgál minden operátor használat esetén.
+    6. A felhasználó az '=' gombra kattinva elindítja a végső kiértékelést
+    7. A számológép a végső ereményt szolgáltatja.               
+
+    __Extensions:__   
+    1a. Nem létezik az FXML fájl    
+   * A rendzser összeomlik. "Keresse fel valamelyik rendszergazdát!"  
+
+   1b. A konfigurációs fájl létezik, de sikertelen a parse-olása
+   * Ekvivalens 1.a kezelésével
+   1c. Értelmezhetetlen matematikai művelet akar elvégezni a user
+   * Pl: 0-val osztás esetén dobjon hibát 
+
+   
+
+   3a. A rendszer biztonsági mentést készít a beállításokról (a JSON lemezre kerül)
+
+   1c-6a. Hálózati hiba merül fel
+   * A rendszer jelezi, amennyiben lehetséges, a hiba okát
+   * A rendszer újraindul.  
+
+   8a. A felhasználó keres a PI-ben résztringeket, ha akarja.   
+   8b. A kimutatást a felhasználó kiviheti lemezre, ha akarja.   
+   * A rendszer kezeli a fájlnév ütközéseket 
+
+  
+2. __Title:__  A user megtekinti eddigi számításait  
+   __Main Success Scenario:__   
+   1. Kiválasztja a Történelem funckiót.
+   2. Felnyílik egy ablak, ahol egy listboxban fel vannak sorolva a számítások, követve a számítási szintaxist.
+   3. Ha akarja, vágolapra másolja a számítást.
+   4. Ha akarja, törli az előzményeket.
+
+   __Extensions:__   
+   1a-4a. Bármilyen hiba esetén azonnal megsemmisíti önmagát(processzus) maga után hagyva a log fájlt a host adminisztárotai számára.   
+
+
 ### Megfeleltetés, hogyan fedik le a használati esetek a követelményeket.
 ### Képernyő tervek.
 ### Forgatókönyvek.
