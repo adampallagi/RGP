@@ -147,19 +147,9 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
 
 ---
 
-### Megfeleltetés, hogyan fedik le a használati esetek a követelményeket
-
----
-
 ### Képernyő tervek
 
 ![képernyőterv](./preview/calculator.png)
-
-### Forgatókönyvek
-
----
-
-### Funkció–követelmény megfeleltetés
 
 ---
 
