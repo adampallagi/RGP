@@ -38,9 +38,25 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
 
 ### Igényelt üzleti folyamatok modellje
 
+1. Alap matematikai műveletek támogat
+    - Az alapműveletek a numerikus billentyűzet közvetlen közelében vannak
+2. Haladó matematikai koncepciókat támogat
+    - Konverziók, trigonometriai függvények, hres konstansok ...
+    - A funkciók típus szerint vannak csoportosítva, a műveletek könnyebb megtalálása érdekében
+3. Támogatja a History (Előzmény) módot
+    - Az előzmény módban az egyes műveletek esetében látni lehet a műveletet, a számo(ka)t melye(ke)n a művelet elvégezve lett, illetve a művelet eredményét
+    - Átlátható, az egyes műveletek nem folynak össze
 ---
 
 ### Követelménylista
+
+1. Könnyen űzemeltethető
+2. Reszponzív GUI
+3. Java
+4. Cross-Platform
+5. History (Előzmény) mód [Experiment]
+6. Matematikai alapműveletek
+7. Matematikai haladó műveletek
 
 ---
 
@@ -127,7 +143,7 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
 
 ### Képernyő tervek
 
----
+![képernyőterv](./preview/calculator.png)
 
 ### Forgatókönyvek
 
