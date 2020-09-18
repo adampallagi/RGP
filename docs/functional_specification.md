@@ -36,8 +36,8 @@
 2. Reszponzív GUI
 3. Java
 4. Cross-Platform
-5. History (Előzmény) mód
-6. Record (Felvétel) mód
+5. History (Előzmény) mód [Experiment]
+6. Record (Felvétel) mód [Experiment]
 7. Matematikai alapműveletek
 8. Matematikai haladó műveletek
 
