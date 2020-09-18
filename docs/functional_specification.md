@@ -64,3 +64,8 @@
 ---
 
 ### Fogalomszótár
+
+* **Előzmény (History) mód**: A korábban elvégzett műveletek listája.
+* **Felvétel (Record) mód**: Műveletek egy sorának kimentése későbbi felhasználásra.
+* **Cross-Platform**: Másnéven platformfüggetlenség, mely olyan operációs rendszerekre, programozási nyelvekre vagy számítógépes programokra, szoftverekre és implementációikra vonatkozik, amelyek több számítógépes platformon képesek mülködni. 
+* **Platform**: Olyan hardver- és/vagy szoftverkörnyezet, mely meghatározza, hogy az adott számítógépen milyen más programok használhatók.
