@@ -27,7 +27,7 @@ Amit mi szeretnék, az a szoftverek egységesítése a különböző platformokr
 
 
 Először is szeretnénk rendelni egy olyan számológépet ami nem függ az operációs rendszertől, a számológép támogasson haladó matematikai számításokhoz szükséges funkcionalitást is, pl trigonometria függvények. Az operációs rendszer függetlenségét úgy tudjuk, hogy a Java nyelv támogatja, ezt a technológiát preferálnánk.    
-Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"__ módot, tehát az elvégzett számításokat szeretnénk eltárolni amíg a program fut, illetve szeretnénk egy __"Rögzítés"__ módot is ahol a tanulók feltudják venni az általuk lenyomott gombokat, majd visszajátszani.     
+Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"__ módot, tehát az elvégzett számításokat szeretnénk eltárolni amíg a program fut.
 
 ---
 
@@ -57,9 +57,6 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
 3. Támogasson History (Előzmény) módot
     - Az előzmény módban az egyes műveletek esetében látni szeretnénk a műveletet, a számo(ka)t melye(ke)n a művelet elvégezve lett, illetve a művelet eredményét
     - Átlátható legyen, az egyes műveletek ne follyanak össze 
-4. Támogasson Record (Felvétel) módot
-    - Kattintás a record gombra -> a felvétel megkezdődik -> ezt követően rogzülnek a kattintások (sor adatszerkezet) -> a record gombra újra rákattintva végetér és mentődik a felvétel
-    - A mentés csak addig létezik amíg a program fut, a program újbóli futtatásával a mentések már nem lesznek elérhetőek
 
 
 ---
@@ -99,7 +96,6 @@ Fogalmak:
 * **GNU/Linux, GNU+Linux, ...**: Linux nem egy operációs rendszer magában, inkább egy újabb szabad komponense a teljesen fukcionáló GNU rendszernek, amelyeket a GNU corelibs, shell eszközök és létfontosságú rendszerkomponensek műküödtetnek egy teljes OS-ként, POSIX-meghatározás szerint.
 * **GUI (Graphic User Interface)**: A felület amit a felhasználó lát és ahol a program funkcióit használja
 * **Előzmény (History) mód**: A korábban elvégzett műveletek listája.
-* **Felvétel (Record) mód**: Műveletek egy sorának kimentése későbbi felhasználásra.
 * **Cross-Platform**: Másnéven platformfüggetlenség, mely olyan operációs rendszerekre, programozási nyelvekre vagy számítógépes programokra, szoftverekre és implementációikra vonatkozik, amelyek több számítógépes platformon képesek mülködni. 
 * **Platform**: Olyan hardver- és/vagy szoftverkörnyezet, mely meghatározza, hogy az adott számítógépen milyen más programok használhatók.
 
