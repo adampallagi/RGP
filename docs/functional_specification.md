@@ -1,5 +1,6 @@
 # Funkcionális specifikáció  
 ### A rendszer céljai és nem céljai.
+Az alapvető célunk, hogy egységesítsük a magyar matematika oktatást, ennek a Cross-Platform Számológépnek a segítségével. A különböző forrásokból használt számológépekkel a diákokoknak megnehezítheti a dolgát hiszen azt a tanár se feltétlenül ismeri és így nehezebben tudja elmagyarázni milyen funkciót hol tud a számológépben megtalálni. Ezen felül lehet, hogy az ismeretlen forrsából szármozó számológép a megfelelő funkciókat nem is tartalmazza. Ennek kiküszöbölésére szeretnénk létrehozni ezt a megbízható számológépet amit bármilyen platformon nyugodtan használhat, a tanárok is meg tudják tanítani a számológép képességeit egy az erre a célre személyre szabott számológéppel. Nem célunk ezzel, hogy a többi számológépet kitúrjuk, csak, hogy legyen egy egységes számológép az otatás produktivitásának maximalizálásáért.
 
 ---
 
@@ -33,6 +34,15 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
 ---
 
 ### Jelenlegi üzleti folyamatok modellje
+1. Windows számológép használata
+	- Diák betölti a Windows NT Kernelt => shell => userspace => megnyitja a Számológépet
+	- Alapvető támogatott műveleteket használja
+2. GNU/Linux számológép használata
+	- Diák betölti a Linux kernelt => shell => userspace
+	- AKtuálisan elérhető számológépet használja
+3. A diák egy Online számológépet használ
+	- Nem egységes számológép
+	- különböző bonyolultabb matematikai műveletek használata
 
 ---
 
