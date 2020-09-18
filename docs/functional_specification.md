@@ -53,7 +53,7 @@
 
 ### Képernyő tervek
 
----
+![képernyőterv](./preview/calculator.png)
 
 ### Forgatókönyvek
 
