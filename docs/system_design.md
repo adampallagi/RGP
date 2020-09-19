@@ -31,6 +31,12 @@
 
 ### Fizikai környezet
 
+- Reszponzív megjelenés
+- A program Java nyelven legyen írva, a fejlesztéshez és teszteléshez használt felületek, eszközök szabadon választhatóak
+- A GUI JavaFX alapokon legyen, a számológép kinézete SceneBuilder használatával legyen összeállítva
+- Az Előzmény mód nem igényel adatbázist, ezért nem szökséges annak üzemeltetése sem
+- A program Windows illetve Linux operációs rendszereken egyaránt futtatható és használható 
+- 
 
 ---
 
