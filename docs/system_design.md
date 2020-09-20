@@ -113,9 +113,7 @@ A rendszer főbb osztályai:
 
 ### Architekturális terv
 
-1. Architekturális tervezési minta
-	- Megjelenítés
-	- Üzleti logika 
+Az architekturálsi tervezési mint alapja az MVC, lesz egy nézet és mögötte a vezérlő üzleti folyamatokkal, a rendszer teljes mértékben bővíthető és különösebb biztonsági funkciói nem lesz, tekintve, hogy egy open source számológép.
 
 ---
 
