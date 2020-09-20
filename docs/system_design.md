@@ -63,3 +63,7 @@ java -jar ./target/SZFM_2020_10_RGP-1.0.jar
 ---
 
 ### Karbantartási terv
+
+- A https://github.com/adampallagi/SZFM_2020_10_RGP GitHub címen mindig a legújabb verzió lesz az elérhető
+- Új verzió megjelenése esetén az oktatási intézményt, erről email-ben fogjuk majd értesíteni és majd abban, hogy frissítik-e az alkalmazást vagy nem, szabad akaratuk szerint járnak el 
+- A frissítés elvégzése mindig ajánlott, felmerülő problémák, hibák kijavított verziója és/vagy újdonságok lesznek elérhetőek benne.
