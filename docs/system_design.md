@@ -49,6 +49,17 @@
 
 ### Telepítési terv
 
+- Linux operációs rendszeren
+```
+git clone https://github.com/adampallagi/SZFM_2020_10_RGP.git 
+cd SZFM_2020_10_RGP/
+mvn package
+java -jar ./target/SZFM_2020_10_RGP-1.0.jar
+```
+- Windows operációs rendszeren:
+    - hasonlóan a fenti terminálos futtatáshoz
+    - ikon keszítése a programhoz és megnyitása, futtatása azáltal 
+
 ---
 
 ### Karbantartási terv
