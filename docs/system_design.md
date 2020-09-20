@@ -1,8 +1,27 @@
 ### A rendszer célja
 
+Az alapvető célunk, hogy egységesítsük a magyar matematika oktatást, ennek a Cross-Platform Számológépnek a segítségével. A különböző forrásokból használt számológépekkel a diákokoknak megnehezítheti a dolgát hiszen azt a tanár se feltétlenül ismeri és így nehezebben tudja elmagyarázni milyen funkciót hol tud a számológépben megtalálni. Ezen felül lehet, hogy az ismeretlen forrsából szármozó számológép a megfelelő funkciókat nem is tartalmazza. Ennek kiküszöbölésére szeretnénk létrehozni ezt a megbízható számológépet amit bármilyen platformon nyugodtan használhat, a tanárok is meg tudják tanítani a számológép képességeit egy az erre a célre személyre szabott számológéppel. Nem célunk ezzel, hogy a többi számológépet kitúrjuk, csak, hogy legyen egy egységes számológép az otatás produktivitásának maximalizálásáért.
+
 ---
 
 ### Projekt terv
+
+1. Projektszerepkörök, felelősségeik
+	- a projekt szerepkörökhöz tartozik a kezelő felület kialakítása, a számológép funkcióinak kialakítása
+	- a szerepkörök működése a feladat írójának a felelőssége
+
+2. Projektmunkások és felelősségeik
+	- a projektmunkások György Dóra, Racs Tamás, Pallagi Ádám
+	- felelősek az általuk elvégzett munkajukért
+
+3. Ütemterv
+	- a munkára egy hét áll rendelkezésre
+
+4. Mérföldkövek
+	- az első feladat a felhasználói felület elkészítése
+	- a második feladat a funkciók megírása
+	- majd a JUnit tesztek megírása
+	
 
 ---
 
@@ -94,9 +113,15 @@ A rendszer főbb osztályai:
 
 ### Architekturális terv
 
+1. Architekturális tervezési minta
+	- Megjelenítés
+	- Üzleti logika 
+
 ---
 
 ### Tesztterv
+
+JUnit tesztek készülnek a rendszer meghatározó üzleti folyamataira
 
 ---
 
