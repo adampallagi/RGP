@@ -97,8 +97,11 @@ A rendszer főbb osztályai:
     * Module Interfészből ered
 * _Application_ osztály:
     * Lényegében a Main()-t definiáló osztály, _Controller_
-    * Itt történik az FXML betöltése    
-    * FXML Contoljainak bekötése..
+    * Itt történik az FXML betöltése     
+    * FXML Contoljainak bekötése..     
+
+![classdiagram](diagrams/class_diagram_beta.png)
+
 ---
 
 ### Fizikai környezet
