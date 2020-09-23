@@ -10,6 +10,7 @@ import java.io.IOException;
 
 public class BasicCalculatorApplication extends Application {
 
+    @Override
     public void start(Stage stage) throws IOException {
         Parent parent = FXMLLoader.load(BasicCalculatorApplication.class.getResource("/fxml/basicCalculator.fxml"));
         stage.setTitle("Basic Calculator");
