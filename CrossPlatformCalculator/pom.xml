@@ -17,6 +17,11 @@
       <name>Racs Tamás</name>
       <email>cant0r.universal@gmail.com</email>
     </developer>
+    <developer>
+      <id>gydora03</id>
+      <name>György Dóra</name>
+      <email>gyorgydora99@gmail.com</email>
+    </developer>
   </developers>
   <dependencies>
 
