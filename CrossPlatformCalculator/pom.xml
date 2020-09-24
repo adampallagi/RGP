@@ -17,8 +17,24 @@
       <name>Racs Tamás</name>
       <email>cant0r.universal@gmail.com</email>
     </developer>
+    <developer>
+      <id>gydora03</id>
+      <name>György Dóra</name>
+      <email>gyorgydora99@gmail.com</email>
+    </developer>
   </developers>
   <dependencies>
-
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-controls</artifactId>
+      <version>14.0.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-fxml</artifactId>
+      <version>14.0.1</version>
+      <scope>compile</scope>
+    </dependency>
   </dependencies>
 </project>
