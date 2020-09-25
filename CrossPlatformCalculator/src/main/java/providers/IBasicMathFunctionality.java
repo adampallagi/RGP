@@ -17,6 +17,8 @@ public interface IBasicMathFunctionality extends IMath {
 
     public double ctg(double a);
 
+    public double mod(double a, double b);
+
     public double power(double a, double b);
 
     public double sqrt(double a);

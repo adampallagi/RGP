@@ -40,6 +40,10 @@ public class BasicMath implements IBasicMathFunctionality {
             return Double.NaN;
     }
 
+    public double mod(double a, double b) {
+        return a % b;
+    }
+
     public double power(double a, double b) {
         return StrictMath.pow(a, b);
     }
