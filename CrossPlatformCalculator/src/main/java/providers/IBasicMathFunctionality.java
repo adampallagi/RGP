@@ -9,6 +9,8 @@ public interface IBasicMathFunctionality extends IMath {
 
     public double divide(double a, double b);
 
+    public double percentage(double a, double b);
+
     public double sin(double a);
 
     public double cos(double a);
