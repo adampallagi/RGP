@@ -21,6 +21,9 @@ public class BasicCalculatorController {
     private Button clear;
 
     @FXML
+    private Button allClear;
+
+    @FXML
     private Button addition;
 
     @FXML
@@ -198,6 +201,15 @@ public class BasicCalculatorController {
     private void handleClickOnClear(ActionEvent event) {
         if (event.getSource() == clear) {
             display.setText("");
+        }
+    }
+
+    @FXML
+    private void handleClickOnAllClear(ActionEvent event) {
+        Calculation calculation = new Calculation();
+        if (event.getSource() == allClear) {
+            calculation = null;
+            display.clear();
         }
     }
 
