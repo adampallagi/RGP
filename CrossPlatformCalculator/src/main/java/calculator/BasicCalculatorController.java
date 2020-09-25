@@ -8,6 +8,8 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
 import providers.Calculation;
 
+import java.io.IOException;
+
 public class BasicCalculatorController {
 
     private BasicCalculator basicCalculator;
@@ -119,7 +121,7 @@ public class BasicCalculatorController {
 
 
     @FXML
-    private void handleClickOnOperator(ActionEvent event) {
+    public void handleClickOnOperator(ActionEvent event){
 
         Calculation calc = new Calculation();
         double value = Double.parseDouble(display.getText());
@@ -203,10 +205,9 @@ public class BasicCalculatorController {
     @FXML
     private void handleClickOnPlusMinusSign(ActionEvent event) {
         if (event.getSource() == plusMinus) {
-            double displayText = Double.parseDouble(display.getText());
-            if (displayText > 0) {
-                displayText = displayText * (-1);
-            }
+            int displayText = Integer.parseInt(display.getText());
+            displayText = displayText * (-1);
+            display.setText(String.valueOf(displayText));
         }
     }
 
