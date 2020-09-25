@@ -1,8 +1,10 @@
 package calculator;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
 import providers.Calculation;
 
@@ -111,6 +113,9 @@ public class BasicCalculatorController {
 
     @FXML
     private Button memoryFour;
+
+    @FXML
+    private MenuItem closeMenuItem;
 
 
     @FXML
@@ -240,6 +245,14 @@ public class BasicCalculatorController {
             } else {
                 display.setText(memory_four);
             }
+        }
+    }
+
+    @FXML
+    private void handleClickOnCloseMenuItem(ActionEvent event) {
+        if (event.getSource() == closeMenuItem) {
+            Platform.exit();
+            System.exit(0);
         }
     }
 }
