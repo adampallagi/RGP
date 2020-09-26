@@ -198,19 +198,15 @@ public class BasicCalculatorController {
 
 
     @FXML
-    private void handleClickOnClear(ActionEvent event) {
-        if (event.getSource() == clear) {
+    private void handleClickOnClear() {
             display.setText("");
-        }
     }
 
     @FXML
-    private void handleClickOnAllClear(ActionEvent event) {
+    private void handleClickOnAllClear() {
         Calculation calculation = new Calculation();
-        if (event.getSource() == allClear) {
-            calculation = null;
-            display.clear();
-        }
+        calculation = null;
+        display.clear();
     }
 
 
