@@ -25,7 +25,7 @@ public interface IBasicMathFunctionality extends IMath {
 
     public double sqrt(double a);
 
-    public double factorial(long n);
+    public double factorial(double n);
 
     public double gcd(double a, double b);
 
