@@ -5,10 +5,10 @@ Az alapvető célunk, hogy egységesítsük a magyar matematika oktatást, ennek
 ---
 
 ### Jelenlegi helyzet leírása
-Mi egy általános iskolákat összefogó tanári szervezet vagyunk, célunk, hogy a város minden általános iskolása ugyanabban a tanítási minőségben részesüljön, mint bármelyik társa.       
-Az iskoláink tanulóinak többsége **Microsoft Windows** felhasználó, így
+Általános iskolákat összefogó tanári szevezet, céljuk, hogy a város minden általános iskolása ugyanabban a tanítási minőségben részesüljön, mint bármelyik társa.       
+Az iskoláik tanulóinak többsége **Microsoft Windows** felhasználó, így
 alapértelmezetten **a gyári számológépet használják** különböző számításai igényeik kielégítésére.      
-Észrevettünk azonban egy egyre nagyobb mértékeket öltő tendenciát, a nebulók
+Észrevették azonban egy egyre nagyobb mértékeket öltő tendenciát, a nebulók
 elhagyják _szeretett_ Microsoft Windows operációs rendszerünket egy újabb, még általunk is alig ismert, általuk __GNU+Linux__-nak nevezett operációs rendszerekre.       
 __Olyan rendszereket használnak, mint például:__   
 * Arch Linux
@@ -19,7 +19,7 @@ __Olyan rendszereket használnak, mint például:__
 * Pop! OS    
 
 De természetesen akadnak még Windows felhasználók is.   
-Ezeknél a rendszereknél azt tapasztaltuk, hogy a beépített számológépek nagyon eltérőek egymástól, így egyelőre még Windows-os számológépet ajánljuk használatra és használjuk oktatásra.    
+Ezeknél a rendszereknél azt tapasztalták, hogy a beépített számológépek nagyon eltérőek egymástól, így egyelőre még Windows-os számológépet ajánljuk használatra és használjuk oktatásra.    
 
 ---
 
