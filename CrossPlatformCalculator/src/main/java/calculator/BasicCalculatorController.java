@@ -232,7 +232,7 @@ public class BasicCalculatorController {
 
     @FXML
     private void handleClickOnPlusMinusSign(ActionEvent event) {
-        int displayText = Integer.parseInt(display.getText());
+        double displayText = Double.parseDouble(display.getText());
         displayText = displayText * (-1);
         display.setText(String.valueOf(displayText));
     }
