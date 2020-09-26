@@ -122,6 +122,11 @@ public class BasicCalculatorController {
     @FXML
     private MenuItem closeMenuItem;
 
+    String memory_one = "";
+    String memory_two = "";
+    String memory_three = "";
+    String memory_four = "";
+
 
     @FXML
     public void handleClickOnOperator(ActionEvent event){
@@ -222,10 +227,6 @@ public class BasicCalculatorController {
 
     @FXML
     private void handleClickOnMemory(ActionEvent event) {
-        String memory_one = "";
-        String memory_two = "";
-        String memory_three = "";
-        String memory_four = "";
 
         if (event.getSource() == memoryOne) {
             if (memory_one == "") {
