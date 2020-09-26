@@ -21,23 +21,31 @@ public class BasicMath implements IBasicMathFunctionality {
             return Double.NaN;
     }
 
+    public double percentage(double a, double b) {
+        return (a * b) / 100;
+    }
+
     public double sin(double a) {
-        return StrictMath.sin(a);
+        return StrictMath.sin(StrictMath.toRadians(a));
     }
 
     public double cos(double a) {
-        return StrictMath.cos(a);
+        return StrictMath.cos(StrictMath.toRadians(a));
     }
 
     public double tan(double a) {
-        return StrictMath.tan(a);
+        return StrictMath.tan(StrictMath.toRadians(a));
     }
 
     public double ctg(double a) {
         if (a < 0 || a > 0)
-            return 1.0 / StrictMath.tan(a);
+            return 1.0 / StrictMath.tan(StrictMath.toRadians(a));
         else
             return Double.NaN;
+    }
+
+    public double mod(double a, double b) {
+        return a % b;
     }
 
     public double power(double a, double b) {
@@ -52,11 +60,11 @@ public class BasicMath implements IBasicMathFunctionality {
             return Double.NaN;
     }
 
-    public double factorial(long n) {
+    public double factorial(double n) {
         double f = 1.0;
-
-        for (; n > 0; n--) {
-            f *= n;
+        long input = (long) n;
+        for (; input > 0; input--) {
+            f *= input;
         }
 
         return f;

@@ -1,15 +1,15 @@
 package providers;
 
 public class Calculation {
-    private double currentValue;
+    private Double currentValue;
 
     private String currentOperator;
 
-    public double getCurrentValue() {
+    public Double getCurrentValue() {
         return currentValue;
     }
 
-    public void setCurrentValue(double currentValue) {
+    public void setCurrentValue(Double currentValue) {
         this.currentValue = currentValue;
     }
 
