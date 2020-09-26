@@ -6,13 +6,12 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
+import providers.BasicMath;
 import providers.Calculation;
 
 import java.io.IOException;
 
 public class BasicCalculatorController {
-
-    private BasicCalculator basicCalculator;
 
     @FXML
     private TextField display;
@@ -122,106 +121,116 @@ public class BasicCalculatorController {
     @FXML
     private MenuItem closeMenuItem;
 
-    String memory_one = "";
-    String memory_two = "";
-    String memory_three = "";
-    String memory_four = "";
+    private BasicCalculator basicCalculator;
+    private String memory_one = "";
+    private String memory_two = "";
+    private String memory_three = "";
+    private String memory_four = "";
 
+    private boolean isOperatorClicked = false;
+
+    public BasicCalculatorController()
+    {
+        basicCalculator = new BasicCalculator(new BasicMath());
+    }
 
     @FXML
-    public void handleClickOnOperator(ActionEvent event){
-
+    public void handleClickOnOperator(ActionEvent event) {
         Calculation calc = new Calculation();
         double value = Double.parseDouble(display.getText());
-        calc.setCurrentValue(value);
+        calc.setCurrentValue(Double.valueOf(value));
 
-        if (event.getSource() == addition) {
-            calc.setCurrentOperator("add");
-        } else if (event.getSource() == subtraction) {
-            calc.setCurrentOperator("subtract");
-        } else if (event.getSource() == multiplication) {
-            calc.setCurrentOperator("multiply");
-        } else if (event.getSource() == division) {
-            calc.setCurrentOperator("divide");
-        } else if (event.getSource() == percentage) {
-            calc.setCurrentOperator("percentage");
-        } else if (event.getSource() == sinus) {
-            calc.setCurrentOperator("sin");
-        } else if (event.getSource() == cosinus) {
-            calc.setCurrentOperator("cos");
-        } else if (event.getSource() == tangens) {
-            calc.setCurrentOperator("tan");
-        } else if (event.getSource() == cotangens) {
-            calc.setCurrentOperator("ctg");
-        } else if (event.getSource() == modulo) {
-            calc.setCurrentOperator("mod");
-        } else if (event.getSource() == xPowY) {
-            calc.setCurrentOperator("power");
-        } else if (event.getSource() == squareRoot) {
-            calc.setCurrentOperator("sqrt");
-        } else if (event.getSource() == factorial) {
-            calc.setCurrentOperator("factorial");
-        } else if (event.getSource() == greatestCommonDivisor) {
-            calc.setCurrentOperator("gcd");
-        } else if (event.getSource() == leastCommonMultiple) {
-            calc.setCurrentOperator("lcm");
-        } else if (event.getSource() == equal) {
-            calc.setCurrentOperator("=");
+        String operator = ((Button) event.getSource()).getText();
+        switch (operator) {
+            case "+":
+                calc.setCurrentOperator("add");
+                break;
+            case "-":
+                calc.setCurrentOperator("subtract");
+                break;
+            case "X":
+                calc.setCurrentOperator("multiply");
+                break;
+            case "/":
+                calc.setCurrentOperator("divide");
+                break;
+            case "%":
+                calc.setCurrentOperator("mod");
+                break;
+            case "sin":
+            case "cos":
+            case "tan":
+            case "ctg":
+                isOperatorClicked = false;
+                calc.setCurrentOperator(operator);
+                break;
+            case "x^y":
+                calc.setCurrentOperator("power");
+                break;
+            case "sqrt(x)":
+                isOperatorClicked = false;
+                calc.setCurrentOperator("sqrt");
+                break;
+            case "x!":
+                isOperatorClicked = false;
+                calc.setCurrentOperator("factorial");
+                break;
+            case "gcd":
+            case "lcm":
+                calc.setCurrentOperator(operator);
+                break;
+            case "=":
+                calc.setCurrentOperator("=");
+                break;
+            default:
+                calc.setCurrentOperator("=");
+                break;
+
         }
 
-        display.setText(String.valueOf(basicCalculator.evaluate(calc)));
+        if(!isOperatorClicked) {
+            String result = String.valueOf(basicCalculator.evaluate(calc));
+            display.setText(result);
+        }
+        else {
+            basicCalculator.updateOperator(calc.getCurrentOperator());
+            return;
+        }
+        isOperatorClicked = true;
     }
 
 
     @FXML
     private void handleClickOnNumber(ActionEvent event) {
 
-        if (event.getSource() == zero) {
-            display.setText(display.getText() + "0");
-        } else if (event.getSource() == one) {
-            display.setText(display.getText() + "1");
-        } else if (event.getSource() == two) {
-            display.setText(display.getText() + "2");
-        } else if (event.getSource() == three) {
-            display.setText(display.getText() + "3");
-        } else if (event.getSource() == four) {
-            display.setText(display.getText() + "4");
-        } else if (event.getSource() == five) {
-            display.setText(display.getText() + "5");
-        } else if (event.getSource() == six) {
-            display.setText(display.getText() + "6");
-        } else if (event.getSource() == seven) {
-            display.setText(display.getText() + "7");
-        } else if (event.getSource() == eight) {
-            display.setText(display.getText() + "8");
-        } else if (event.getSource() == nine) {
-            display.setText(display.getText() + "9");
-        } else if (event.getSource() == decimalDot) {
-            display.setText(display.getText() + ".");
-        }
+        if(isOperatorClicked)
+            display.setText("");
+        isOperatorClicked = false;
+
+        String digit = ((Button) event.getSource()).getText();
+        if(digit.equals(".") && display.getText().contains("."))
+            return;
+        display.setText(display.getText().concat(digit));
     }
 
 
     @FXML
     private void handleClickOnClear() {
-            display.setText("");
+        display.setText("");
     }
 
     @FXML
     private void handleClickOnAllClear() {
-        Calculation calculation = new Calculation();
-        calculation = null;
+        basicCalculator.clearCalculations();
         display.clear();
     }
 
 
     @FXML
     private void handleClickOnPlusMinusSign(ActionEvent event) {
-        if (event.getSource() == plusMinus) {
-            int displayText = Integer.parseInt(display.getText());
-            displayText = displayText * (-1);
-            display.setText(String.valueOf(displayText));
-        }
+        int displayText = Integer.parseInt(display.getText());
+        displayText = displayText * (-1);
+        display.setText(String.valueOf(displayText));
     }
 
 
@@ -229,28 +238,28 @@ public class BasicCalculatorController {
     private void handleClickOnMemory(ActionEvent event) {
 
         if (event.getSource() == memoryOne) {
-            if (memory_one == "") {
+            if (memory_one.equals("")) {
                 memory_one = display.getText();
             } else {
                 display.setText(memory_one);
             }
         }
         if (event.getSource() == memoryTwo) {
-            if (memory_two == "") {
+            if (memory_one.equals("")) {
                 memory_two = display.getText();
             } else {
                 display.setText(memory_two);
             }
         }
         if (event.getSource() == memoryThree) {
-            if (memory_three == "") {
+            if (memory_one.equals("")) {
                 memory_three = display.getText();
             } else {
                 display.setText(memory_three);
             }
         }
         if (event.getSource() == memoryFour) {
-            if (memory_four == "") {
+            if (memory_one.equals("")) {
                 memory_four = display.getText();
             } else {
                 display.setText(memory_four);
@@ -260,9 +269,8 @@ public class BasicCalculatorController {
 
     @FXML
     private void handleClickOnCloseMenuItem(ActionEvent event) {
-        if (event.getSource() == closeMenuItem) {
-            Platform.exit();
-            System.exit(0);
-        }
+        Platform.exit();
+        System.exit(0);
+
     }
 }
