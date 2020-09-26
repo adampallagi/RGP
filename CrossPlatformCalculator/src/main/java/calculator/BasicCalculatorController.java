@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
+import org.tinylog.Logger;
 import providers.BasicMath;
 import providers.Calculation;
 import providers.ConstantProvider;
@@ -149,6 +150,7 @@ public class BasicCalculatorController {
 
     @FXML
     public void handleClickOnOperator(ActionEvent event) {
+        Logger.info("Operator was clicked");
         Calculation calc = new Calculation();
         double value = Double.parseDouble(display.getText());
         calc.setCurrentValue(Double.valueOf(value));
@@ -253,7 +255,7 @@ public class BasicCalculatorController {
 
     @FXML
     private void handleClickOnMemory(ActionEvent event) {
-
+        Logger.info("Memory button clicked");
         if (event.getSource() == memoryOne) {
             if (memory_one.equals("")) {
                 memory_one = display.getText();
@@ -287,9 +289,9 @@ public class BasicCalculatorController {
     @FXML
     private void handleClickOnConstant(ActionEvent event){
 
-        System.out.println("szia");
+        Logger.info("Constant was clicked");
         if(event.getSource() == piMenuItem){
-            System.out.println("hello");
+
             display.setText(String.valueOf(ConstantProvider.getPi()));
         }
         if(event.getSource() == eulerMenuItem){
@@ -315,6 +317,7 @@ public class BasicCalculatorController {
 
     @FXML
     private void handleClickOnCloseMenuItem(ActionEvent event) {
+        Logger.info("Wxit program");
         Platform.exit();
         System.exit(0);
 
