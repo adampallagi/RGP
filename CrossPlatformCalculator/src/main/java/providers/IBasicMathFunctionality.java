@@ -9,6 +9,8 @@ public interface IBasicMathFunctionality extends IMath {
 
     public double divide(double a, double b);
 
+    public double percentage(double a, double b);
+
     public double sin(double a);
 
     public double cos(double a);
@@ -17,11 +19,13 @@ public interface IBasicMathFunctionality extends IMath {
 
     public double ctg(double a);
 
+    public double mod(double a, double b);
+
     public double power(double a, double b);
 
     public double sqrt(double a);
 
-    public double factorial(long n);
+    public double factorial(double n);
 
     public double gcd(double a, double b);
 
