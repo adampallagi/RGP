@@ -28,7 +28,7 @@
                      <items>
                         <MenuItem fx:id="piMenuItem" mnemonicParsing="false" text="Pi" />
                         <MenuItem fx:id="eulerMenuItem" mnemonicParsing="false" text="Euler Constant" />
-                        <MenuItem fx:id="pascalMenuItem" mnemonicParsing="false" text="Pascal Constant" />
+                        <MenuItem fx:id="BernsteinMenuItem" mnemonicParsing="false" text="Bernstein Constant" />
                         <MenuItem fx:id="goldenRatioMenuItem" mnemonicParsing="false" text="Golden Ratio" />
                      </items>
                   </Menu>
