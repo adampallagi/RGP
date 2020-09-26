@@ -40,8 +40,11 @@ public class BasicCalculator implements ICalculator<Double> {
             if (m == null)
                 return storedCalculation.getCurrentValue();
             try {
-                if (m.getParameterCount() == 1)
-                    return (Double) m.invoke(bm, storedCalculation.getCurrentValue());
+                if (m.getParameterCount() == 1) {
+                    storedCalculation.setCurrentOperator(calculation.getCurrentOperator());
+                    storedCalculation.setCurrentValue((Double) m.invoke(bm, storedCalculation.getCurrentValue()));
+                    return storedCalculation.getCurrentValue();
+                }
                 else
                     return storedCalculation.getCurrentValue();
             } catch (InvocationTargetException | IllegalAccessException iae) {

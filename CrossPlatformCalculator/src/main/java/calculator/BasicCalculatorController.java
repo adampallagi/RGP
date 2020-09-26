@@ -223,6 +223,10 @@ public class BasicCalculatorController {
     private void handleClickOnAllClear() {
         basicCalculator.clearCalculations();
         display.clear();
+        memory_one = "";
+        memory_two = "";
+        memory_three = "";
+        memory_three = "";
     }
 
 
