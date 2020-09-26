@@ -1,20 +1,24 @@
 package providers;
-
+import org.tinylog.Logger;
 
 public class BasicMath implements IBasicMathFunctionality {
     public double add(double a, double b) {
+        Logger.info("Add was made");
         return a + b;
     }
 
     public double subtract(double a, double b) {
+        Logger.info("Subtract was made");
         return a - b;
     }
 
     public double multiply(double a, double b) {
+        Logger.info("Multiply was made");
         return a * b;
     }
 
     public double divide(double a, double b) {
+        Logger.info("Divide was made");
         if (b > 0 || b < 0)
             return a / b;
         else
