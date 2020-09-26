@@ -20,7 +20,7 @@
                      <items>
                         <MenuItem fx:id="piMenuItem" mnemonicParsing="false" text="Pi" />
                         <MenuItem fx:id="eulerMenuItem" mnemonicParsing="false" text="Euler Constant" />
-                        <MenuItem fx:id="pascalMenuItem" mnemonicParsing="false" text="Pascal Constant" />
+                        <MenuItem fx:id="planckMenuItem" mnemonicParsing="false" text="Planck Constant" />
                         <MenuItem fx:id="goldenRatioMenuItem" mnemonicParsing="false" text="Golden Ratio" />
                      </items>
                   </Menu>
@@ -259,7 +259,7 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </GridPane.margin>
                         </Button>
-                        <Button fx:id="nine" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                        <Button fx:id="nine" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="9" onAction="#handleClickOnNumber" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Segoe UI Semibold" size="17.0" />
                            </font>
