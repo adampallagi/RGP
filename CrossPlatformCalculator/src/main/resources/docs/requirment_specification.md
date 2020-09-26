@@ -52,7 +52,7 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
 1. Támogasson alap matematikai műveleteket
     - Az alapműveletek a numerikus billentyűzet közvetlen közelében legyenek
 2. Támogasson haladó matematikai koncepciókat 
-    - Konverziók, trigonometriai függvények, hres konstansok ...
+    - Konverziók, trigonometriai függvények, híres konstansok ...
     - A funkciók típus szerint csoportosítva legyenek, a műveletek könnyebb megtalálása érdekében
 3. Támogasson History (Előzmény) módot
     - Az előzmény módban az egyes műveletek esetében látni szeretnénk a műveletet, a számo(ka)t melye(ke)n a művelet elvégezve lett, illetve a művelet eredményét
@@ -74,14 +74,14 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
 
 ### Követelménylista 
 
-1. Könnyen üzemeltethetőség
-2. Reszponzív GUI
-3. Java
-4. Cross-Platform
-5. Előzmény mód
-6. Felvétel mód
-7. Matematikai alapműveletek
-8. Matematikai haladó műveletek
+- K01. Könnyen üzemeltethetőség
+- K02. Reszponzív GUI
+- K03. Java
+- K04. Cross-Platform
+- K05. Előzmény mód
+- K06. Felvétel mód
+- K07. Matematikai alapműveletek
+- K08. Matematikai haladó műveletek
 
 
 ---
