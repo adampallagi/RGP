@@ -8,10 +8,23 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
 import providers.BasicMath;
 import providers.Calculation;
+import providers.ConstantProvider;
 
 import java.io.IOException;
 
 public class BasicCalculatorController {
+
+    @FXML
+    private MenuItem piMenuItem;
+
+    @FXML
+    private MenuItem eulerMenuItem;
+
+    @FXML
+    private MenuItem BernsteinMenuItem;
+
+    @FXML
+    private MenuItem goldenRatioMenuItem;
 
     @FXML
     private TextField display;
@@ -270,6 +283,35 @@ public class BasicCalculatorController {
             }
         }
     }
+
+    @FXML
+    private void handleClickOnConstant(ActionEvent event){
+
+        System.out.println("szia");
+        if(event.getSource() == piMenuItem){
+            System.out.println("hello");
+            display.setText(String.valueOf(ConstantProvider.getPi()));
+        }
+        if(event.getSource() == eulerMenuItem){
+
+            display.setText(String.valueOf(ConstantProvider.getEulerConstant()));
+        }
+        if(event.getSource() == BernsteinMenuItem){
+
+            display.setText(String.valueOf(ConstantProvider.getBernsteinConstant()));
+        }
+        if(event.getSource() == goldenRatioMenuItem){
+
+            display.setText(String.valueOf(ConstantProvider.getGoldenRatio()));
+        }
+    }
+
+    @FXML
+    public void PiMenuItem(ActionEvent e){
+        System.out.println("asd");
+    }
+
+
 
     @FXML
     private void handleClickOnCloseMenuItem(ActionEvent event) {
