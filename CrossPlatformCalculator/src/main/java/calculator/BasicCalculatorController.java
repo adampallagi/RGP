@@ -245,7 +245,7 @@ public class BasicCalculatorController {
         memory_one = "";
         memory_two = "";
         memory_three = "";
-        memory_three = "";
+        memory_four = "";
     }
 
 
