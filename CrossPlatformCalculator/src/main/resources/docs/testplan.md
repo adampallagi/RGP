@@ -56,5 +56,21 @@ Minden teszt esetén három esetet nézünk meg: két estet, amikor a metódus r
 - Két szám legnagyobb közös osztólyának a kiszámolására szolgáló metódust és annak mülködését teszteli.
 
 #### testLcm()
-- Készítette: György Dóra
+- Készítette: Pallagi Ádám
 - Két szám legkisebb közös többszörösének a kiszámolására szolgáló metódust és annak mülködését teszteli.
+
+
+### BasicCalculatorTest
+A Modellre vonatkozó tesztelések.   
+A lényeg az ```evaluate(Calculation c)``` letesztelése, ugyanis az adja az alkalmazás magját.   
+_Fontos_, hogy csak a public modifier-rel ellátott metódusokat teszteljük egyelőre!   
+A tesztek megírásért felelős: **Racs Tamás**   
+A teszteket talál a Maven specifikus teszt mappában _calculator_ csomag alatt.    
+
+A tesztek alakja:   
+#### testEvaluate_\<method\>     
+- Leteszteli, hogy az input ténylegesen a megfelelő műveleteket váltja ki és helyes eredménnyel tér-e vissza az ```evaluate(Calculation c)```   
+
+#### testEvaluate_complexCalcualtion     
+- Leteszteli, hogy az inputok sorozata ténylegesen a megfelelő műveleteket váltják ki és helyes eredménnyel tér-e vissza az ```evaluate(Calculation c)```
+

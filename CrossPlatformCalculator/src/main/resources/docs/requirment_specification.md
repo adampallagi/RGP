@@ -27,7 +27,7 @@ Amit mi szeretnék, az a szoftverek egységesítése a különböző platformokr
 
 
 Először is szeretnénk rendelni egy olyan számológépet ami nem függ az operációs rendszertől, a számológép támogasson haladó matematikai számításokhoz szükséges funkcionalitást is, pl trigonometria függvények. Az operációs rendszer függetlenségét úgy tudjuk, hogy a Java nyelv támogatja, ezt a technológiát preferálnánk.    
-Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"__ módot, tehát az elvégzett számításokat szeretnénk eltárolni amíg a program fut.
+Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"__ módot, hogy ellehessen menteni az eddig elvégzett számításokat.
 
 ---
 
@@ -55,7 +55,7 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
     - Konverziók, trigonometriai függvények, híres konstansok ...
     - A funkciók típus szerint csoportosítva legyenek, a műveletek könnyebb megtalálása érdekében
 3. Támogasson History (Előzmény) módot
-    - Az előzmény módban az egyes műveletek esetében látni szeretnénk a műveletet, a számo(ka)t melye(ke)n a művelet elvégezve lett, illetve a művelet eredményét
+    - Az elvégzett számításokat lehessen elmenti valamilyen módon.
     - Átlátható legyen, az egyes műveletek ne follyanak össze 
 
 
@@ -65,7 +65,6 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
 
 * Az alkalmazás legyen reszponzív
 * A nyelv Java legyen, az eszközök szabadon választhatók
-* A program ne rögzítse a user inputot amíg nincs Record módban
 * GUI legyen JavaFX alapokon
 * Történelmi mód nem igényel adatbázist, nem kesz üzemeltetünk adatbázist
 
@@ -79,9 +78,8 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
 - K03. Java
 - K04. Cross-Platform
 - K05. Előzmény mód
-- K06. Felvétel mód
-- K07. Matematikai alapműveletek
-- K08. Matematikai haladó műveletek
+- K06. Matematikai alapműveletek
+- K07. Matematikai haladó műveletek
 
 
 ---
@@ -95,7 +93,7 @@ Fogalmak:
 * **Linux disztribúció**: A Linux-disztribúciók a Linux-kernelre épülő terjesztések. Linux kernel mellett több-kevesebb szabad szoftvert és kereskedelmi szoftvert tartalmazhatnak.  
 * **GNU/Linux, GNU+Linux, ...**: Linux nem egy operációs rendszer magában, inkább egy újabb szabad komponense a teljesen fukcionáló GNU rendszernek, amelyeket a GNU corelibs, shell eszközök és létfontosságú rendszerkomponensek műküödtetnek egy teljes OS-ként, POSIX-meghatározás szerint.
 * **GUI (Graphic User Interface)**: A felület amit a felhasználó lát és ahol a program funkcióit használja
-* **Előzmény (History) mód**: A korábban elvégzett műveletek listája.
+* **Előzmény (History) mód**: A korábban elvégzett műveletek listája/táblázata.
 * **Cross-Platform**: Másnéven platformfüggetlenség, mely olyan operációs rendszerekre, programozási nyelvekre vagy számítógépes programokra, szoftverekre és implementációikra vonatkozik, amelyek több számítógépes platformon képesek mülködni. 
 * **Platform**: Olyan hardver- és/vagy szoftverkörnyezet, mely meghatározza, hogy az adott számítógépen milyen más programok használhatók.
 
