@@ -33,4 +33,32 @@ class BasicMathTest {
         assertNotEquals(3, new BasicMath().divide(25, 5));
         assertEquals(4, new BasicMath().divide(28, 7));
     }
+
+    @Test
+    void testSqrt(){
+        assertNotEquals(4,new BasicMath().sqrt(9));
+        assertNotEquals(16,new BasicMath().sqrt(36));
+        assertEquals(5,new BasicMath().sqrt(25));
+    }
+
+    @Test
+    void testFactorial(){
+        assertNotEquals(3,new BasicMath().factorial(9));
+        assertNotEquals(70,new BasicMath().factorial(10));
+        assertEquals(24,new BasicMath().factorial(4));
+    }
+
+    @Test
+    void testGcd(){
+        assertNotEquals(2,new BasicMath().gcd(12,17));
+        assertNotEquals(4,new BasicMath().gcd(30,48));
+        assertEquals(3,new BasicMath().gcd(6,9));
+    }
+
+    @Test
+    void testLcm(){
+        assertNotEquals(24,new BasicMath().lcm(3,4));
+        assertNotEquals(56,new BasicMath().lcm(6,7));
+        assertEquals(6,new BasicMath().lcm(2,3));
+    }
 }
