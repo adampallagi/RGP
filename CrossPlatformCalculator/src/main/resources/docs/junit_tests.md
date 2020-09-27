@@ -42,3 +42,19 @@ Minden teszt esetén három esetet nézünk meg: két estet, amikor a metódus r
 #### testPower()
 - Készítette: György Dóra
 - Egy szám valahányadik hatványának a kiszámolására szolgáló metódust és annak mülködését teszteli.
+
+#### testSqrt()
+- Készítette: Pallagi Ádám
+- Egy szám négyzetgyökének a kiszámolására szolgáló metódust és annak mülködését teszteli.
+
+#### testFactorial()
+- Készítette: Pallagi Ádám
+- Egy szám faktoriálisának a kiszámolására szolgáló metódust és annak mülködését teszteli.
+
+#### testGcd()
+- Készítette: Pallagi Ádám
+- Két szám legnagyobb közös osztólyának a kiszámolására szolgáló metódust és annak mülködését teszteli.
+
+#### testLcm()
+- Készítette: György Dóra
+- Két szám legkisebb közös többszörösének a kiszámolására szolgáló metódust és annak mülködését teszteli.
