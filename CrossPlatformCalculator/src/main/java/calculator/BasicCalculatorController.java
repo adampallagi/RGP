@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
+import module.HistoryModule;
 import org.tinylog.Logger;
 import providers.BasicMath;
 import providers.Calculation;
@@ -327,5 +328,13 @@ public class BasicCalculatorController {
         Platform.exit();
         System.exit(0);
 
+    }
+
+    public void handleHistoryButton(ActionEvent actionEvent) {
+        HistoryModule hm = basicCalculator.<HistoryModule>getModule("history");
+        if(hm != null){
+            hm.dumpLogs();
+            display.setText("History was saved to historyLogs.txt!");
+        }
     }
 }

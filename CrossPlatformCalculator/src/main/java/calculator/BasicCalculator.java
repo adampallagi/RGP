@@ -28,7 +28,7 @@ public class BasicCalculator implements ICalculator<Double> {
             functions.put(m.getName(), m);
         }
 
-        registerModule("history", new HistoryModule());
+        registerModule("history", HistoryModule.getInstance());
 
         Logger.tag("BasicCalculator").debug("Constructor has been executed successfully");
 
@@ -39,6 +39,7 @@ public class BasicCalculator implements ICalculator<Double> {
     public Double evaluate(Calculation calculation) {
         if (storedCalculation == null || storedCalculation.getCurrentOperator().equals("=")) {
             storedCalculation = calculation;
+            this.<HistoryModule>getModule("history").logCalculation(storedCalculation);
             Method m = getMathMethod(storedCalculation);
             if (m == null)
                 return storedCalculation.getCurrentValue();
@@ -46,6 +47,7 @@ public class BasicCalculator implements ICalculator<Double> {
                 if (m.getParameterCount() == 1) {
                     storedCalculation.setCurrentOperator(calculation.getCurrentOperator());
                     storedCalculation.setCurrentValue((Double) m.invoke(bm, storedCalculation.getCurrentValue()));
+                    this.<HistoryModule>getModule("history").logCalculation(storedCalculation);
                     return storedCalculation.getCurrentValue();
                 } else
                     return storedCalculation.getCurrentValue();
@@ -53,7 +55,7 @@ public class BasicCalculator implements ICalculator<Double> {
                 System.out.println(iae.getMessage());
             }
         }
-        
+
         Method method = getMathMethod(calculation);
         if (method == null)
             return storedCalculation.getCurrentValue();
@@ -63,6 +65,7 @@ public class BasicCalculator implements ICalculator<Double> {
             else
                 storedCalculation.setCurrentValue((Double) method.invoke(bm, storedCalculation.getCurrentValue(), calculation.getCurrentValue()));
             storedCalculation.setCurrentOperator(calculation.getCurrentOperator());
+            this.<HistoryModule>getModule("history").logCalculation(storedCalculation);
             return storedCalculation.getCurrentValue();
 
         } catch (InvocationTargetException | IllegalAccessException iae) {
