@@ -5,7 +5,7 @@ Az alapvető célunk, hogy egységesítsük a magyar matematika oktatást, ennek
 ---
 
 ### Jelenlegi helyzet leírása
-Általános iskolákat összefogó tanári szevezet, céljuk, hogy a város minden általános iskolása ugyanabban a tanítási minőségben részesüljön, mint bármelyik társa.       
+Egy az általános iskolákat összefogó tanári szevezet új matematikai szoftvereket akar rendelni.     
 Az iskoláik tanulóinak többsége **Microsoft Windows** felhasználó, így
 alapértelmezetten **a gyári számológépet használják** különböző számításai igényeik kielégítésére.      
 Észrevették azonban egy egyre nagyobb mértékeket öltő tendenciát, a nebulók
@@ -18,18 +18,22 @@ __Olyan rendszereket használnak, mint például:__
 * Hannah Montana Linux
 * Pop! OS    
 
-De természetesen akadnak még Windows felhasználók is.   
-Ezeknél a rendszereknél azt tapasztalták, hogy a beépített számológépek nagyon eltérőek egymástól, így egyelőre még Windows-os számológépet ajánljuk használatra és használjuk oktatásra.    
+A lényeg csupán az, hogy valakik a GTK+-os könyvtárakat, valakik a Qt könyvtárakat, ileltve egyéb más könyvtárakat hazsnálnak, és ezek mind-mind egyedi szoftverrrel rendelkeznek és ezek mind eltérnek valamellyest.  
+  
+Tehát ezeknél a rendszereknél azt tapasztalták, hogy a beépített számológépek nagyon eltérőek egymástól, így egyelőre még Windows-os számológépet ajánjlák használatra és használják oktatásra.    
 
 ---
 
 ### Vágyálom rendszer leírása  
+A Csoport fontosnak tartja a legkorszerúbb technológiák használatát, mivel a szoftvert Java nyelven megírva szeretnék megkapni:
+* A modern JavaFX keretrendszert fogjuk használni
+* Build Automation Tooll pedig a Maven lesz ami szintén CrossPlatform, így az adminjaik is tudják majd szerkeszteni igényeik szerint, ha szükséges.
 A csoportunk nagyon fontosnak tartja, hogy tanárokként lépést tartsunk a technológiával, hogy a lehető legkorszerűbb eszközöket használjuk az oktatásban, illetve védeni tudjuk diákjainkat az új technológiák jelentette veszélyektől.    
-Dedikáltságunkat semmi sem jelzi jobban, mint például **a 80 éves Stefi** bácsi esete, aki a beszterce-lakótelepi általános iskolások testnevelő tanára, aki nemrégiben feltelepítette számítógépére az **Arch Linux** Linux disztribúciót egy úgynevezett ``dwm`` ablakkezelő rendszerrel, hogy naprakész maradjon a fiatalsággal, így jobban tudva motiválni őket a sportolásra.     
-Amit mi szeretnék, az a szoftverek egységesítése a különböző platformokra. Nem szeretnénk eltiltani a tanulókat a választás lehetőségétől, a digitális szabadságuk fenntartása az érdekünk, viszont annak érdekében hogy az intézményekben hatékonyan tudjunk tanítani egy-egy programot szeretnénk használni egy-egy konkrét feladatra egységesen.  
+   
+Szeretnék egységesíteni a szoftvereiket, ebbe beletartozik a kinézet is, szerencsére a JavaFX használatával modern kinézetű alkalmazást tudunk létrehozni ami platformokon keresztül megegyezik.   
 
-Először is szeretnénk rendelni egy olyan számológépet ami nem függ az operációs rendszertől, a számológép támogasson haladó matematikai számításokhoz szükséges funkcionalitást is, pl trigonometria függvények. Az operációs rendszer függetlenségét úgy tudjuk, hogy a Java nyelv támogatja, ezt a technológiát preferálnánk.    
-Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"__ módot, tehát az elvégzett számításokat szeretnénk eltárolni amíg a program fut.     
+Kérik, hogy az alapvető matematikai műveltek mellett támogasson a számológép trigonometria függvényeket, illetve más _haladóbb_ matematikai funckionalitást.    
+Továbbá, szeretnék, ha a számológép támogatna egyfajta __"Történelem"__ módot, hogy ellehessen menteni az eddig elvégzett számításokat.
 
 ---
 
@@ -54,7 +58,7 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
     - Konverziók, trigonometriai függvények, híres konstansok beépítve a hozzájuk tartozó gombokhoz
     - A funkciók típus szerint vannak csoportosítva, a műveletek könnyebb megtalálása érdekében
 3. Támogatja a History (Előzmény) módot
-    - Az előzmény módban az egyes műveletek esetében látni lehet a műveletet, a számo(ka)t melye(ke)n a művelet elvégezve lett, illetve a művelet eredményét
+    - Az elvégzett számításokat lehessen elmenti valamilyen módon.
     - Átlátható, az egyes műveletek nem folynak össze
 4. Az egyes gombok egyértelműen utalnak a funkciójukra.
 
@@ -66,7 +70,7 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
 - K02. Reszponzív GUI
 - K03. Java
 - K04. Cross-Platform
-- K05. History (Előzmény) mód [Experiment]
+- K05. History (Előzmény) mód
 - K06. Matematikai alapműveletek
 - K07. Matematikai haladó műveletek
 
@@ -102,31 +106,25 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
 2. __Title:__  A tanuló megtekinti eddigi számításait  
    __Main Success Scenario:__     
    1. Kiválasztja a Történelem funckiót.
-   2. Felnyílik egy ablak, ahol egy listboxban, esztétikusan, fel vannak sorolva a számítások, követve a számítási szintaxist.
-   3. Ha akarja, vágolapra másolja a számítást.
-   4. Ha akarja, törli az előzményeket.
-   5. Ha akarja, lemezre viszi az aktuális történelmét JSON formátumban
+   2. Lemezre lementődnek az eddig elvégzett számítások
+   3. Megnyitja az aktuális _historyLog.txt_ állományt.
+   4. Ha akarja, vágolapra másolja adott számítást.
+   5. Ha akarja, törli az előzményeket.
 
    __Extensions:__   
    1a-5a. Bármilyen hiba esetén azonnal megsemmisíti önmagát(processzus) maga után hagyva a log fájlt a host adminisztárotai számára.   
 
-3. __Title:__ A tanuló a számítási módot vált    
-   __Main Success Scenario:__      
-   1. A _kijelző_ alatti területen elhelyezkedő rádiógombokra kattint.
-   2. A választott rádiógomb alapján választ [Deg/Grad] módok között.
-   3. A választás alapján a rendszer automatikus átkonvertálja a jelenleg begépelt értéket.
-
-4. __Title:__ A tanuló elmenti memóriába az aktuális értéket        
+3. __Title:__ A tanuló elmenti memóriába az aktuális értéket        
    __Main Success Scenario:__       
    1. A tanuló elvégzett számítást.
    2. Az értéket a rendszer kijelzi a _kijelzőn_.
-   3. A tanuló a "mod" + memóriagombok egyikére kattint
+   3. A tanuló a  memóriagombok egyikére kattint
    4. A rendszer elmenti a megfelelő slotba az értéket
 
    __Extensions__:    
    1a. Begépel egy értéket   
 
-5. __Title:__ A tanuló lekér egy mentett értéket     
+4. __Title:__ A tanuló lekér egy mentett értéket     
    __Main Success Scenario:__      
    1. A tanuló a memóriagombok egyikére kattint
    2. A mentett érték bekerül egy rendszerváltozóba
@@ -135,7 +133,7 @@ Továbbá, szeretnénk, ha a számológép támogatna egyfajta __"Történelem"_
    __Extension:__    
    2a. Amennyiben nincs mentett érték semmi nem történik.   
 
-6. __Title:__ A tanuló lekér egy konstanst   
+5. __Title:__ A tanuló lekér egy konstanst   
    __Main Success Scenario:__    
    1. A tanuló az kurzort a menüre viszi
    2. Megnyílik az adott menüelem alatt az opciók
