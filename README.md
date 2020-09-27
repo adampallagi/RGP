@@ -18,14 +18,7 @@ Egy Javaban íródott cross-platform, _ultimate_, open-source számológép mind
 * **JDK 11**
 * **Maven**
 
-
-### Telepítás [Felhasználóként]
-1. Töltsd le a legfriseeb __*RELEASE.ZIP*__ vagy __*RELEASE.TAR.GZ*__ fájlt a repo Releases oldaláról.    
-2. Csomagold ki az állományt
-3. Futtasd a mellékelt .jar állományt a lehetséges módok alapján
-
-
-### Telepítés [Fejlesztőként]
+### Telepítés 
 1. Klónozd le a repot
 2. Állítsd elő a futtatható .jar állományt a következők alapján:
 ```bash
@@ -37,5 +30,3 @@ mvn clean test package
 ```bash
 java -jar target/Cross*.jar
 ```
-
-
