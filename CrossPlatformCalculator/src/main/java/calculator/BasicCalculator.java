@@ -3,6 +3,7 @@ package calculator;
 
 import module.HistoryModule;
 import module.IModule;
+import org.tinylog.Logger;
 import providers.Calculation;
 import providers.IBasicMathFunctionality;
 
@@ -27,15 +28,18 @@ public class BasicCalculator implements ICalculator<Double> {
             functions.put(m.getName(), m);
         }
 
-        registerModule("history", new HistoryModule());
+        registerModule("history", HistoryModule.getInstance());
+
+        Logger.tag("BasicCalculator").debug("Constructor has been executed successfully");
 
     }
 
 
     @Override
     public Double evaluate(Calculation calculation) {
-        if (storedCalculation == null) {
+        if (storedCalculation == null || storedCalculation.getCurrentOperator().equals("=")) {
             storedCalculation = calculation;
+            this.<HistoryModule>getModule("history").logCalculation(storedCalculation);
             Method m = getMathMethod(storedCalculation);
             if (m == null)
                 return storedCalculation.getCurrentValue();
@@ -43,14 +47,15 @@ public class BasicCalculator implements ICalculator<Double> {
                 if (m.getParameterCount() == 1) {
                     storedCalculation.setCurrentOperator(calculation.getCurrentOperator());
                     storedCalculation.setCurrentValue((Double) m.invoke(bm, storedCalculation.getCurrentValue()));
+                    this.<HistoryModule>getModule("history").logCalculation(storedCalculation);
                     return storedCalculation.getCurrentValue();
-                }
-                else
+                } else
                     return storedCalculation.getCurrentValue();
             } catch (InvocationTargetException | IllegalAccessException iae) {
                 System.out.println(iae.getMessage());
             }
         }
+
         Method method = getMathMethod(calculation);
         if (method == null)
             return storedCalculation.getCurrentValue();
@@ -59,13 +64,16 @@ public class BasicCalculator implements ICalculator<Double> {
                 storedCalculation.setCurrentValue((Double) method.invoke(bm, storedCalculation.getCurrentValue()));
             else
                 storedCalculation.setCurrentValue((Double) method.invoke(bm, storedCalculation.getCurrentValue(), calculation.getCurrentValue()));
+            storedCalculation.setCurrentOperator(calculation.getCurrentOperator());
+            this.<HistoryModule>getModule("history").logCalculation(storedCalculation);
+            return storedCalculation.getCurrentValue();
 
         } catch (InvocationTargetException | IllegalAccessException iae) {
             System.out.println(iae.getMessage());
+            Logger.tag("BasicCalculator").error("{} has happened!! Check stacktrace for further information.", iae.getClass().getName());
+            Logger.tag("BasicCalculator").error(iae.getMessage());
         }
-
-        storedCalculation.setCurrentOperator(calculation.getCurrentOperator());
-        return storedCalculation.getCurrentValue();
+        return Double.NaN;
 
     }
 
@@ -81,7 +89,7 @@ public class BasicCalculator implements ICalculator<Double> {
             method = functions.get(calculation.getCurrentOperator());
         } else {
             Method newMethod = functions.get(calculation.getCurrentOperator());
-            if(newMethod.getParameterCount() == 1)
+            if (newMethod.getParameterCount() == 1)
                 method = newMethod;
             else
                 method = functions.get(storedCalculation.getCurrentOperator());
@@ -108,7 +116,8 @@ public class BasicCalculator implements ICalculator<Double> {
         storedCalculation = null;
     }
 
-    public void updateOperator(String operator){
-        storedCalculation.setCurrentOperator(operator);
+    public void updateOperator(String operator) {
+        if (storedCalculation != null)
+            storedCalculation.setCurrentOperator(operator);
     }
 }
