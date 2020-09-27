@@ -25,10 +25,6 @@ public class BasicMath implements IBasicMathFunctionality {
             return Double.NaN;
     }
 
-    public double percentage(double a, double b) {
-        return (a * b) / 100;
-    }
-
     public double sin(double a) {
         return StrictMath.sin(StrictMath.toRadians(a));
     }
