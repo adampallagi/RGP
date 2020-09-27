@@ -80,27 +80,35 @@ Néhány demo _activity_ ábra:
 
 A matematikai függvényeket, beleértve az alapműveleteket, saját osztályaink alapján fogjuk szolgáltatni.   
 A rendszer főbb osztályai:   
-* _Calculator_ osztály:
+* _BasicCalculator_ osztály:
     * Nyomonköveti egy tagváltozóban az aktuális részeredményt
-    * Wrapper osztály a StrictMathra nézve
     * A "Controller" osztályban példányosodik
     * Nyomonköveti az aktuálisan alkalmazandó operátort is  
         * Ha nincs mentve jelenleg, akkor mentés kijelzőről + operátor maga
         * Ha van mentve, akkor részkiértékelés
-* _MathConstants_ osztály:
+* _BasicMath_ osztály:
+    * Implementálja az _IBasicMathFunctionality_ interfészt
+    * Wrapper a StrictMath-ra nézve
+* _Calculation_ osztály:
+    * Data class
+    * Hordozza az operátort és (egyik) operanduszát            
+* _ConstantProvider_ osztály:
     * Statikus osztály, nem példányosítható
     * Statikus függvények révén ad vissza definiált konstans értékeket    
 * _HistoryModule_ osztály:
     * Singleton osztály
-    * Minden részkiértékelés eredménye rögzítésre kerül ```record(T t)``` metódusa révén
+    * Minden részkiértékelés eredménye rögzítésre kerül ```logCalculation(Calculation c)``` metódusa révén
     * Biztosítja a Történelem funkciót
     * Module Interfészből ered
-* _Application_ osztály:
+* _BasiCalculatorApplication_ osztály:
     * Lényegében a Main()-t definiáló osztály, _Controller_
     * Itt történik az FXML betöltése     
-    * FXML Contoljainak bekötése..     
+    * FXML Contoljainak bekötése..   
+* _BasicCalculatorController_ osztály:
+    * Az MVC modelben ő valósítja meg a Controllert
+    * Összeköti a View és Modellt
 
-![classdiagram](diagrams/class_diagram_beta.png)
+![classdiagram](diagrams/class_diagram.png)
 
 ---
 
@@ -122,7 +130,21 @@ Az architekturálsi tervezési mint alapja az MVC, lesz egy nézet és mögötte
 
 ### Tesztterv
 
-JUnit tesztek készülnek a rendszer meghatározó üzleti folyamataira
+Az alkalmazásunk az MVC modellt követi, így külön kell tesztelnünk a Modellt, View-t és Controller(eke)t.  
+A tesztek egy része JUnit tesztek lesznek.  
+Speciálisan élő testert is alkalmazva, adott felhasználó végzi a tesztelést és jelzi vissza tapasztalatait a fejlesztők felé. 
+Modell esetében:     
+1. A kifejezés feldolgozása helyesen hajtódik-e végre?
+2. Lehet-e léncolni kifejezéseket?
+3. A definiált matematikai műveletek definíciójuk helytállóan helyes eredményt szolgáltatnak?   
+
+View esetében:      
+    1. Reszponzív-e az alkalmazás GUI-ja?
+    2. Képes a felhasználó tájékozódni a felületen? 
+    3. Képes a felhasználó műveletek elvégzésére?        
+    
+Controller esetében:
+1. Az elvártak alajpán közvetít a Modell és View között?
 
 ---
 
