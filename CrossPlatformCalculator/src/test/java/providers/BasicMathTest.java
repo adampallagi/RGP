@@ -38,28 +38,28 @@ class BasicMathTest {
     void testSin() {
         assertNotEquals(5, new BasicMath().sin(9));
         assertNotEquals(2, new BasicMath().sin(10));
-        assertEquals(0.01745240643728351, new BasicMath().sin(1));
+        assertEquals(0.0175, new BasicMath().sin(1), 0.3);
     }
 
     @Test
     void testCos() {
         assertNotEquals(6, new BasicMath().cos(2));
         assertNotEquals(23, new BasicMath().cos(4));
-        assertEquals(0.9998476951563913, new BasicMath().cos(1));
+        assertEquals(0.99985, new BasicMath().cos(1), 0.3);
     }
 
     @Test
     void testTan() {
         assertNotEquals(7, new BasicMath().tan(2.4));
         assertNotEquals(8, new BasicMath().tan(6.5));
-        assertEquals(0.02618592156918693, new BasicMath().tan(1.5));
+        assertEquals(0.026, new BasicMath().tan(1.5), 0.3);
     }
 
     @Test
     void testCtg() {
         assertNotEquals(9, new BasicMath().ctg(4.7));
         assertNotEquals(6, new BasicMath().ctg(3.3));
-        assertEquals(38.1884592970256, new BasicMath().ctg(1.5));
+        assertEquals(38.188, new BasicMath().ctg(1.5), 0.3);
     }
 
     @Test
