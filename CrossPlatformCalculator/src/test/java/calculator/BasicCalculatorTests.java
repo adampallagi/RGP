@@ -180,4 +180,47 @@ public class BasicCalculatorTests {
         assertEquals(6.0, calc.evaluate(c), 0.1 * 15);
 
     }
+
+    @Test
+    public void testEvaluate_complexCalculation() {
+        BasicCalculator calc = new BasicCalculator(new BasicMath());
+        Calculation c = new Calculation();
+        c.setCurrentOperator("lcm");
+        c.setCurrentValue(2.0);
+        calc.evaluate(c);
+        c = new Calculation();
+        c.setCurrentValue(3d);
+        c.setCurrentOperator("=");
+        calc.evaluate(c);
+
+        //stored 6.0
+        Calculation c2 = new Calculation();
+        c2.setCurrentValue(6d);
+        c2.setCurrentOperator("multiply");
+        calc.evaluate(c2);
+        c2= new Calculation();
+        c2.setCurrentValue(30d);
+        c2.setCurrentOperator("=");
+        calc.evaluate(c2);
+
+        //stored 180
+        Calculation c3 = new Calculation();
+        c3.setCurrentValue(180d);
+        c3.setCurrentOperator("divide");
+        calc.evaluate(c3);
+        c3= new Calculation();
+        c3.setCurrentValue(38d);
+        c3.setCurrentOperator("=");
+        calc.evaluate(c3);
+
+        //stored 5
+
+        Calculation c4 = new Calculation();
+        c4.setCurrentOperator("factorial");
+        c4.setCurrentValue(5d);
+
+        assertEquals(120d,calc.evaluate(c4));
+
+
+    }
 }
