@@ -89,7 +89,8 @@ public class BasicCalculator implements ICalculator<Double> {
             method = functions.get(calculation.getCurrentOperator());
         } else {
             Method newMethod = functions.get(calculation.getCurrentOperator());
-            if (newMethod.getParameterCount() == 1)
+            Method oldMethod = functions.get(storedCalculation.getCurrentOperator());
+            if (newMethod.getParameterCount() == 1 && oldMethod.getParameterCount() == 2)
                 method = newMethod;
             else
                 method = functions.get(storedCalculation.getCurrentOperator());
