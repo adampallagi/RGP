@@ -269,7 +269,7 @@ public class BasicCalculatorController {
         }
         if (event.getSource() == memoryTwo) {
             Logger.tag("BasicCalculatorController").debug("Memory button {} was clicked", 2);
-            if (memory_one.equals("")) {
+            if (memory_two.equals("")) {
                 memory_two = display.getText();
             } else {
                 display.setText(memory_two);
@@ -277,7 +277,7 @@ public class BasicCalculatorController {
         }
         if (event.getSource() == memoryThree) {
             Logger.tag("BasicCalculatorController").debug("Memory button {} was clicked", 3);
-            if (memory_one.equals("")) {
+            if (memory_three.equals("")) {
                 memory_three = display.getText();
             } else {
                 display.setText(memory_three);
@@ -285,7 +285,7 @@ public class BasicCalculatorController {
         }
         if (event.getSource() == memoryFour) {
             Logger.tag("BasicCalculatorController").debug("Memory button {} was clicked", 4);
-            if (memory_one.equals("")) {
+            if (memory_four.equals("")) {
                 memory_four = display.getText();
             } else {
                 display.setText(memory_four);
