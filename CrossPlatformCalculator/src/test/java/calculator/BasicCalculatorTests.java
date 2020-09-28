@@ -1,10 +1,12 @@
 package calculator;
 
+import module.HistoryModule;
 import org.junit.jupiter.api.Test;
 import providers.BasicMath;
 import providers.Calculation;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class BasicCalculatorTests {
 
@@ -152,6 +154,7 @@ public class BasicCalculatorTests {
         assertEquals(120.0, calc.evaluate(c), 0.1 * 15);
 
     }
+
     @Test
     public void testEvaluate_gcd() {
         BasicCalculator calc = new BasicCalculator(new BasicMath());
@@ -166,6 +169,7 @@ public class BasicCalculatorTests {
         assertEquals(1.0, calc.evaluate(c), 0.1 * 15);
 
     }
+
     @Test
     public void testEvaluate_lcm() {
         BasicCalculator calc = new BasicCalculator(new BasicMath());
@@ -198,7 +202,7 @@ public class BasicCalculatorTests {
         c2.setCurrentValue(6d);
         c2.setCurrentOperator("multiply");
         calc.evaluate(c2);
-        c2= new Calculation();
+        c2 = new Calculation();
         c2.setCurrentValue(30d);
         c2.setCurrentOperator("=");
         calc.evaluate(c2);
@@ -208,7 +212,7 @@ public class BasicCalculatorTests {
         c3.setCurrentValue(180d);
         c3.setCurrentOperator("divide");
         calc.evaluate(c3);
-        c3= new Calculation();
+        c3 = new Calculation();
         c3.setCurrentValue(38d);
         c3.setCurrentOperator("=");
         calc.evaluate(c3);
@@ -219,8 +223,35 @@ public class BasicCalculatorTests {
         c4.setCurrentOperator("factorial");
         c4.setCurrentValue(5d);
 
-        assertEquals(120d,calc.evaluate(c4));
+        assertEquals(120d, calc.evaluate(c4));
 
+
+    }
+
+    @Test
+    public void testModuleRegistration() {
+        BasicCalculator calc = new BasicCalculator(new BasicMath());
+        calc.registerModule("history", HistoryModule.getInstance());
+        assertEquals(HistoryModule.getInstance(), calc.<HistoryModule>getModule("history"));
+    }
+
+    @Test
+    public void testUpdateOperator() {
+        BasicCalculator calc = new BasicCalculator(new BasicMath());
+        Calculation c = new Calculation();
+        c.setCurrentValue(5d);
+        c.setCurrentOperator("multiply");
+
+        double r = calc.evaluate(c);
+
+        Calculation c2 = new Calculation();
+        c2.setCurrentValue(2d);
+        c2.setCurrentOperator("power");
+        calc.updateOperator(c2.getCurrentOperator());
+        r = calc.evaluate(c2);
+
+        assertEquals(25d, r);
+        assertNotEquals(10d, r);
 
     }
 }
