@@ -24,7 +24,7 @@ Egy Javaban íródott cross-platform, _ultimate_, open-source számológép mind
 ```bash
 cd SZFM*
 cd Cross*
-mvn clean test package
+mvn clean package
 ```
 3. Futtasd a .jar állományt:
 ```bash
